@@ -4,10 +4,10 @@
 Kollavari Anu
 
 ## Intern ID
-YOUR INTERN ID
+Not Provided
 
 ## Email Address
-YOUR EMAIL ADDRESS
+kollavarianu@gmail.com
 
 ## GitHub Username
 kollavarianu-debug
