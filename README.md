@@ -1,16 +1,93 @@
-# React + Vite
+# DETTROIN-INT-Anu-Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Full Name
+Kollavari Anu
 
-Currently, two official plugins are available:
+## Intern ID
+YOUR INTERN ID
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Email Address
+YOUR EMAIL ADDRESS
 
-## React Compiler
+## GitHub Username
+kollavarianu-debug
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Selected Website
+The Kalyani School
 
-## Expanding the ESLint configuration
+## Live Demo Link
+https://dettroin-int-anu-website.vercel.app/
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## GitHub Repository
+https://github.com/kollavarianu-debug/DETTROIN-INT-Anu-Website
+
+## Technologies Used
+
+- React.js
+- Vite
+- Tailwind CSS
+- JavaScript (ES6)
+- HTML5
+- CSS3
+
+## Features
+
+- Modern Responsive Design
+- Sticky Navigation Bar
+- Hero Section
+- About Section
+- Programs Section
+- Facilities Section
+- Gallery Section
+- Testimonials Section
+- Contact Section
+- Footer
+- Smooth Scrolling
+
+## Key Improvements Made
+
+- Redesigned the original school website with a modern user interface.
+- Improved responsiveness for desktop, tablet, and mobile devices.
+- Used reusable React components.
+- Added attractive cards, hover animations, and a professional layout.
+- Improved navigation with smooth scrolling.
+- Optimized the website structure for better user experience.
+
+## Project Structure
+
+```text
+src/
+│── assets/
+│   ├── images/
+│   └── hero.png
+│
+│── components/
+│   ├── Navbar.jsx
+│   ├── Hero.jsx
+│   ├── About.jsx
+│   ├── Programs.jsx
+│   ├── Facilities.jsx
+│   ├── Gallery.jsx
+│   ├── Testimonials.jsx
+│   ├── Contact.jsx
+│   └── Footer.jsx
+│
+├── App.jsx
+├── main.jsx
+└── index.css
+```
+
+## Installation
+
+```bash
+npm install
+npm run dev
+```
+
+## Live Website
+
+https://dettroin-int-anu-website.vercel.app/
+
+## Developed By
+
+Kollavari Anu
