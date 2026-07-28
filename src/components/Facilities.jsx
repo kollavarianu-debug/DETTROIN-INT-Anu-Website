@@ -59,6 +59,7 @@ function Facilities() {
               <img
                 src={facility.image}
                 alt={facility.title}
+                loading="lazy"
                 className="w-full h-56 object-cover hover:scale-105 transition-all duration-500"
               />
 
@@ -72,9 +73,12 @@ function Facilities() {
                   {facility.description}
                 </p>
 
-                <button className="mt-6 bg-blue-700 text-white px-5 py-2 rounded-lg font-semibold hover:bg-blue-900 transition duration-300">
+                <a
+                  href="#gallery"
+                  className="mt-6 inline-block bg-blue-700 text-white px-5 py-2 rounded-lg font-semibold hover:bg-blue-900 transition duration-300"
+                >
                   Explore
-                </button>
+                </a>
 
               </div>
 

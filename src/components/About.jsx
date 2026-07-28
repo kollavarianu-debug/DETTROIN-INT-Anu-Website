@@ -43,11 +43,12 @@ function About() {
 
           </div>
 
-          <button
-            className="mt-10 bg-blue-700 text-white px-8 py-3 rounded-xl font-semibold shadow-lg hover:bg-blue-900 hover:scale-105 transition-all duration-300"
+          <a
+            href="#programs"
+            className="mt-10 inline-block bg-blue-700 text-white px-8 py-3 rounded-xl font-semibold shadow-lg hover:bg-blue-900 hover:scale-105 transition-all duration-300"
           >
             Read More
-          </button>
+          </a>
 
         </div>
 
