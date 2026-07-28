@@ -14,7 +14,7 @@ function Navbar() {
           <li>
             <a
               href="#home"
-              className="hover:text-blue-700 transition duration-300"
+              className="hover:text-blue-700 transition duration-300 font-medium"
             >
               Home
             </a>
@@ -23,7 +23,7 @@ function Navbar() {
           <li>
             <a
               href="#about"
-              className="hover:text-blue-700 transition duration-300"
+              className="hover:text-blue-700 transition duration-300 font-medium"
             >
               About
             </a>
@@ -32,7 +32,7 @@ function Navbar() {
           <li>
             <a
               href="#programs"
-              className="hover:text-blue-700 transition duration-300"
+             className="hover:text-blue-700 transition duration-300 font-medium"
             >
               Programs
             </a>
@@ -41,7 +41,7 @@ function Navbar() {
           <li>
             <a
               href="#facilities"
-              className="hover:text-blue-700 transition duration-300"
+             className="hover:text-blue-700 transition duration-300 font-medium"
             >
               Facilities
             </a>
@@ -50,7 +50,7 @@ function Navbar() {
           <li>
             <a
               href="#gallery"
-              className="hover:text-blue-700 transition duration-300"
+              className="hover:text-blue-700 transition duration-300 font-medium"
             >
               Gallery
             </a>
@@ -59,7 +59,7 @@ function Navbar() {
           <li>
             <a
               href="#contact"
-              className="hover:text-blue-700 transition duration-300"
+              className="hover:text-blue-700 transition duration-300 font-medium"
             >
               Contact
             </a>
