@@ -5,52 +5,73 @@ import sportsImage from "../assets/images/sports.jpg";
 
 function Gallery() {
 
-    const images = [
-  aboutImage,
-  labImage,
-  libraryImage,
-  sportsImage,
-];
+  const images = [
+    {
+      image: aboutImage,
+      title: "School Campus",
+    },
+    {
+      image: labImage,
+      title: "Science Laboratory",
+    },
+    {
+      image: libraryImage,
+      title: "Digital Library",
+    },
+    {
+      image: sportsImage,
+      title: "Sports Activities",
+    },
+  ];
 
-return(
-<section
-id="gallery"
- className="py-16 bg-gray-50">
+  return (
+    <section
+      id="gallery"
+      className="bg-gray-50 py-24"
+    >
 
-<div className="max-w-7xl mx-auto px-6">
+      <div className="max-w-7xl mx-auto px-6">
 
-<h2 className="text-4xl font-bold text-center text-blue-900">
-Gallery
-</h2>
+        <h2 className="text-4xl md:text-5xl font-extrabold text-center text-blue-900 mb-5">
+          Our Gallery
+        </h2>
 
-<p className="text-center text-gray-600 mt-3 mb-10">
-A glimpse of our campus and student life.
-</p>
+        <p className="text-center text-gray-600 text-lg max-w-3xl mx-auto leading-8 mb-14">
+          Explore memorable moments from our vibrant campus, classrooms,
+          laboratories, library, and extracurricular activities.
+        </p>
 
-<div className="grid md:grid-cols-2 gap-6">
+        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
 
-{images.map((image,index)=>(
-<div
-key={index}
-className="overflow-hidden rounded-xl shadow-lg"
->
+          {images.map((item, index) => (
+            <div
+              key={index}
+              className="relative overflow-hidden rounded-3xl shadow-lg group hover:shadow-2xl transition-all duration-300"
+            >
 
-<img
-src={image}
-alt=""
-className="w-full h-64 object-cover hover:scale-110 transition duration-500"
-/>
+              <img
+                src={item.image}
+                alt={item.title}
+                className="w-full h-72 object-cover group-hover:scale-110 transition-all duration-500"
+              />
 
-</div>
-))}
+              <div className="absolute inset-0 bg-black/30 flex items-end">
 
-</div>
+                <h3 className="text-white text-xl font-bold p-5">
+                  {item.title}
+                </h3>
 
-</div>
+              </div>
 
-</section>
-)
+            </div>
+          ))}
 
+        </div>
+
+      </div>
+
+    </section>
+  );
 }
 
 export default Gallery;
