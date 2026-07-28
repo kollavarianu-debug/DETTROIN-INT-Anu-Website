@@ -24,20 +24,22 @@ function Hero() {
 
         <div className="flex justify-center gap-5 flex-wrap">
 
-          <button
-            className="bg-yellow-400 text-black px-7 py-3 rounded-lg font-semibold shadow-lg hover:bg-yellow-300 hover:scale-105 transition-all duration-300"
+          <a
+            href="#contact"
+            className="bg-yellow-400 text-black px-7 py-3 rounded-lg font-semibold shadow-lg hover:bg-yellow-300 hover:scale-105 transition-all duration-300 inline-block"
           >
             Apply Now
-          </button>
+          </a>
 
-          <button
-            className="border-2 border-white px-7 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-900 hover:scale-105 transition-all duration-300"
+          <a
+            href="#gallery"
+            className="border-2 border-white px-7 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-900 hover:scale-105 transition-all duration-300 inline-block"
           >
             Explore Campus
-          </button>
+          </a>
 
         </div>
-        
+
       </div>
     </section>
   );
