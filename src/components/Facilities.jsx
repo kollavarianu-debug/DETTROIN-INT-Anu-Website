@@ -9,66 +9,80 @@ function Facilities() {
       title: "Modern Laboratories",
       image: labImage,
       description:
-        "Well-equipped science and computer labs for practical learning.",
+        "Well-equipped science and computer laboratories designed for practical learning and innovation.",
     },
     {
       title: "Digital Library",
       image: libraryImage,
       description:
-        "A rich collection of books, journals, and digital learning resources.",
+        "A comprehensive collection of books, e-books, journals, and digital learning resources.",
     },
     {
       title: "Sports Complex",
       image: sportsImage,
       description:
-        "Indoor and outdoor sports facilities for physical development.",
+        "Indoor and outdoor sports facilities that promote fitness, teamwork, and discipline.",
     },
     {
       title: "Smart Classrooms",
       image: aboutImage,
       description:
-        "Technology-enabled classrooms that make learning interactive.",
+        "Interactive classrooms equipped with modern technology for engaging and effective learning.",
     },
   ];
 
   return (
-    <section 
-    id="facilities"
-     className="bg-white py-16 px-6">
+    <section
+      id="facilities"
+      className="bg-white py-24 px-6"
+    >
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-4xl font-bold text-center text-blue-900">
+
+        <h2 className="text-4xl md:text-5xl font-extrabold text-center text-blue-900 mb-5">
           Our Facilities
         </h2>
 
-        <p className="text-center text-gray-600 mt-3 mb-12">
-          We provide world-class infrastructure to support every student's
-          academic and personal growth.
+        <p className="text-center text-gray-600 text-lg max-w-3xl mx-auto leading-8 mb-14">
+          Our campus provides world-class facilities that support academic
+          excellence, creativity, innovation, and the overall development of
+          every student.
         </p>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+
           {facilities.map((facility, index) => (
             <div
               key={index}
-              className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition duration-300"
+              className="bg-white rounded-3xl shadow-lg overflow-hidden hover:-translate-y-3 hover:shadow-2xl transition-all duration-300"
             >
+
               <img
                 src={facility.image}
                 alt={facility.title}
-                className="w-full h-52 object-cover"
+                className="w-full h-56 object-cover hover:scale-105 transition-all duration-500"
               />
 
-              <div className="p-5">
-                <h3 className="text-xl font-semibold text-blue-900 mb-3">
+              <div className="p-6">
+
+                <h3 className="text-2xl font-bold text-blue-900 mb-4">
                   {facility.title}
                 </h3>
 
-                <p className="text-gray-600 text-sm">
+                <p className="text-gray-700 leading-7">
                   {facility.description}
                 </p>
+
+                <button className="mt-6 bg-blue-700 text-white px-5 py-2 rounded-lg font-semibold hover:bg-blue-900 transition duration-300">
+                  Explore
+                </button>
+
               </div>
+
             </div>
           ))}
+
         </div>
+
       </div>
     </section>
   );
