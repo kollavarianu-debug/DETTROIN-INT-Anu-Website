@@ -4,7 +4,6 @@ import libraryImage from "../assets/images/library.jpg";
 import sportsImage from "../assets/images/sports.jpg";
 
 function Gallery() {
-
   const images = [
     {
       image: aboutImage,
@@ -29,7 +28,6 @@ function Gallery() {
       id="gallery"
       className="bg-gray-50 py-24"
     >
-
       <div className="max-w-7xl mx-auto px-6">
 
         <h2 className="text-4xl md:text-5xl font-extrabold text-center text-blue-900 mb-5">
@@ -52,6 +50,7 @@ function Gallery() {
               <img
                 src={item.image}
                 alt={item.title}
+                loading="lazy"
                 className="w-full h-72 object-cover group-hover:scale-110 transition-all duration-500"
               />
 
@@ -69,7 +68,6 @@ function Gallery() {
         </div>
 
       </div>
-
     </section>
   );
 }
